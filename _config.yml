@@ -1,0 +1,51 @@
+# Site
+name: "TFP Code"
+title: "TFP Code"
+description: "TFP Engineering blog"
+meta_description: "TFP,Engineering,Blog"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /mediumish-theme-jekyll
+disqus: 'tfpcode'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  john:
+    name: TFP
+    display_name: Total Fraud Protection
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: fredy.garcia@cyxtera.com
+    web: https://www.cyxtera.com
+    description: "Total Fraud Protection."
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
