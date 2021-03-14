@@ -72,7 +72,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
-  kramdown
+  kramdown (>= 2.3.0)
   rouge
   wdm (>= 0.1.0)
 
